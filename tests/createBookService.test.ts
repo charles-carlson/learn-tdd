@@ -6,6 +6,7 @@ import Genre from "../models/genre";
 
 describe("Verify POST /create_book", () => {
 
+    //refactor test to improve mockResolvedValue, -> mockImplementation
     it("should create a new book for an existing author and genre", async () => {
         const mockReqBody = {
             familyName: "Tagore",
