@@ -50,7 +50,7 @@ should be placed in `tests/authorService.test.ts`.
 Briefly explain a limitation of the tests in `tests/authorSchema.test.ts` in the space below.
 
 A limitation of the tests in authorSchema is there is a tight coupling of dependecies for authorSchema tests.
-Some of the tests rely on multiple various functions that use the database to ensure correct logic is being applied during the tests. This goes against using jest to mock server and db calls, since some of the tests are calling the db when testing a separate function for Authors.
+Some of the tests rely on multiple various functions that use the database to ensure correct logic is being applied during the tests. This goes against using jest to mock server and db calls, since some of the tests are calling the db when testing a separate function for Authors. There is also coupling of other implementation features that our tests rely on to test another feature.
 
 
 ## Part 3
